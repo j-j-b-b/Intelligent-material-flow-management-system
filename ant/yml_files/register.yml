@@ -1,0 +1,38 @@
+tags:  
+  - 登录注册接口
+summary: 注册接口  # 接口描述
+post:
+  parameters:  # 参数
+    - name: email  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 注册的邮箱  # 参数描述
+      required: true  #必填项
+      # default:  # 默认值
+    - name: adminname  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 注册的名称  # 参数描述
+      required: true  #必填项
+    - name: password  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 登录的密码  # 参数描述
+      required: true  #必填项
+    - name: password_confirm  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 再输入一次密码  # 参数描述
+      required: true  #必填项
+    - name: captcha  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 注册的验证码  # 参数描述
+      required: true  #必填项
+
+responses:
+  200:
+    description: 处理了注册请求
+    schema:
+      type: string
+      default: 成功

@@ -1,0 +1,15 @@
+tags:  # 接口名称
+  - 登录注册接口
+summary: 发送验证码接口  # 接口描述
+parameters:  # 参数
+  - name: email  # 参数名
+    in: query  # 参数类型
+    type: string  # 参数值的类型
+    description: 登录的邮箱  # 参数描述
+    required: true  #必填项
+responses:
+  200:
+    description: 处理了发送请求
+    schema:
+      type: string
+      default: 成功

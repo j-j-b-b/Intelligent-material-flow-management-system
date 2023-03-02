@@ -1,0 +1,36 @@
+tags:  # 接口名称
+  - 数据库接口
+summary: 修改接口  # 接口描述
+put:
+  parameters:  # 参数
+    - name: id
+      in: path
+      type: string
+      required: true
+    - name: address_x  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 地址_x  # 参数描述
+      required: true  #必填项
+    - name: address_y  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 地址_y  # 参数描述
+      required: true  #必填项
+    - name: number  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 电话  # 参数描述
+      required: true  #必填项
+    - name: name  # 参数名
+      in: formData  # 参数类型
+      type: string  # 参数值的类型
+      description: 姓名  # 参数描述
+      required: true  #必填项
+
+responses:
+  200:
+    description: 处理了修改请求
+    schema:
+      type: string
+      default: 成功

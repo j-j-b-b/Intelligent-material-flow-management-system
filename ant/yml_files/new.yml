@@ -1,0 +1,9 @@
+tags:  # 接口名称
+  - 派送路径接口
+summary: 初始化接口  # 接口描述
+responses:
+  200:
+    description: 处理了初始化请求
+    schema:
+      type: string
+      default: 成功

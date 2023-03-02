@@ -1,0 +1,20 @@
+paths:
+  /output/{page}/{limits}:
+tags:  # 接口名称
+  - 查询接口
+summary: 分页查询接口  # 接口描述
+parameters:
+      - name: page
+        in: path
+        type: string
+        required: true
+      - name: limits
+        in: path
+        type: string
+        required: true
+responses:
+  200:
+    description: 处理了查询请求
+    schema:
+      type: string
+      default: 成功

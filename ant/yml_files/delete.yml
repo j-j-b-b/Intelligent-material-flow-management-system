@@ -1,0 +1,15 @@
+tags:  # 接口名称
+  - 数据库接口
+summary: 删除接口  # 接口描述
+delete:
+  parameters:
+        - name: id
+          in: path
+          type: string
+          required: true
+responses:
+  200:
+    description: 处理了删除请求
+    schema:
+      type: string
+      default: 成功

@@ -1,0 +1,15 @@
+paths:
+  /api/output:
+tags:  # 接口名称
+  - 查询接口
+summary: 输出所以数据接口  # 接口描述
+
+responses:
+  200:
+    description: 处理了输出请求
+    schema:
+      type: string
+      default: 成功
+
+
+
