@@ -16,9 +16,7 @@
 - 安卓端：Android Studio、Java等。
 ## 安装和启动
 ### 前端
-```
-bash
-Copy code
+```bash
 # 安装依赖
 npm install
 
@@ -29,9 +27,7 @@ npm run dev
 npm run build
 ```
 ### 后端
-```
-bash
-Copy code
+```bash
 # 安装依赖
 pip install -r requirements.txt
 
